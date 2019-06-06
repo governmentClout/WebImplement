@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Government Clout</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="font-awesome-4.7.0/css/font-awesome-animation.min.css" rel="stylesheet" />
+    <link href="css/loading-btn.css" rel="stylesheet">
+    <link href="css/loading.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/activity.css" rel="stylesheet" />
+    <link href="css/smallerscreen.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lato" rel="stylesheet">
+</head>
+
+<body>
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" style="display: flex;">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navb">
+                <div class="navbar-nav">
+                    <form class="form-inline" action="" id="navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Username">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div> 
+                    </form> 
+                </div>
+                <ul class="navbar-nav" style="margin: auto;">
+                    <li class="nav-item">
+                      <a href="" class="nav-link message-div"><span class="message-count">0</span><img src="images/message.png" class="img-fluid" alt="message"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link message-div"><span class="message-count">2</span><img src="images/notification.png" class="img-fluid" alt="notification"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="pull-right">
+                            <div id="profile-dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <img src="images/pro.png" class="img-fluid" alt="Profile picture">
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Link 1</a>
+                                    <a class="dropdown-item" href="#">Link 2</a>
+                                    <a class="dropdown-item" href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+                        <form class="form-inline" action="" id="navbar-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Username">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="m-10">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <a href="" class="message-div"><span class="message-count">0</span><img
+                                        src="images/message.png" class="img-fluid" alt="message"></a>
+                            </div>
+                            <div class="col-lg-1">
+                                <div class="dropdown">
+                                    <a class="message-div nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <span class="message-count">2</span><img src="images/notification.png"
+                                            class="img-fluid" alt="notification">
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-left">
+                                        <h5 class="dropdown-header">Notifications</h5>
+                                        <a class="dropdown-item" href="notifications.html">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/friend.png" class="img-circle"
+                                                        alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> commented on your <br>recent post.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="notifications.html">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/friend.png" class="img-circle"
+                                                        alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> commented on your <br>recent post.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="notifications.html">
+                                            <div class="d-flex">
+                                                <div class="p-2">
+                                                    <img src="images/friend.png" class="img-circle"
+                                                        alt="Friend's profile picture">
+                                                </div>
+                                                <div class="p-2 flex-fill mt-8">
+                                                    <div>
+                                                        <p><b>Michelle Heston</b> commented on your <br>recent post.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <p class="text-center viewmore-cover"><a href="" class="viewmore bold">View
+                                                more</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="pull-right">
+                                    <div class="dropdown" id="profile-dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <img src="images/pro.png" class="img-fluid" alt="Profile picture">
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Link 1</a>
+                                            <a class="dropdown-item" href="#">Link 2</a>
+                                            <a class="dropdown-item" href="#">Link 3</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="activity-div">
+        <div class="container-fluid pt-20">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div>
+                        <div id="profile-background">
+                            <div class="">
+                                <img src="images/prof.png" class="img-fluid mt-45" alt="Profile Image">
+                            </div>
+                            <!-- <div class="p-image">
+                                <i class="fa fa-edit upload-button"></i>
+                                <input class="file-upload" type="file" accept="image/*"/>
+                            </div> -->
+                            <div class="profilename-div">
+                                <p class="profile-name">James Adewale</p>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="leaders-div">
+                                            <h6>Clouts</h6>
+                                            <p>300</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="leaders-div">
+                                            <h6>Leaders</h6>
+                                            <p>200</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="leaders-div">
+                                            <h6>Friends</h6>
+                                            <p>100</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profilenamediv">
+                            <div id="shortcut-div">
+                                <p id="shortcuts">Shortcuts</p>
+                                <a href="" class="shortcuts-sample">
+                                    <p></p>
+                                    <span>Governance Clout</span>
+                                </a>
+                                <a href="" class="shortcuts-sample">
+                                    <p id="shortcut-two"></p>
+                                    <span>Governance Clout</span>
+                                </a>
+                                <a href="" class="shortcuts-sample">
+                                    <p id="shortcut-three"></p>
+                                    <span>Governance Clout</span>
+                                </a>
+                                <a href="" class="shortcuts-sample">
+                                    <p id="shortcut-four"></p>
+                                    <span>Governance Clout</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="profilenamediv">
+                            <div id="footer">
+                                <p id="copy">© 2018 GClout | Copyrights reserved</p>
+                                <p><a href="">Help & FAQ</a> | <a href="terms.html">Terms Of Use</a> | <a
+                                        href="privacy.html">Privacy policy</a></p>
+                                <p><span class="bold">Contact Us</span> <br>Email: <a
+                                        href="mailto:gclout@gmail.com">gclout@gmail.com</a><br> Phone: +234 803 333 3333
+                                </p>
+                                <hr>
+                                <p id="advertise"><img src="images/foot.png"> Advertise with Gclout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="postdiv" style="padding-bottom: 0;">
+                        <div id="post-div">
+                            <p class="pull-left">Post</p>
+                            <p class="text-right"><img src="images/filter.png" class="img-fluid" alt="filter"> Filter
+                            </p>
+                        </div>
+                    </div>
+                    <div class="postdiv">
+                        <div id="post-div">
+                            <div id="postcontent-div">
+                                <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                                <textarea class="form-control" placeholder="What’s on your mind" data-toggle="modal"
+                                    data-target="#postModal"></textarea>
+                            </div>
+                            <div class="pt-20 pb-15 mb--15">
+                                <a href=""><span class="badge badge-secondary"><img src="images/article.png"
+                                            class="img-fluid" alt="icon">&nbsp;Article</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/camera.png"
+                                            class="img-fluid" alt="icon">&nbsp;Photo/video</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/location.png"
+                                            class="img-fluid" alt="icon">&nbsp;Location</span></a>
+                                <a href="" data-toggle="modal" data-target="#petitionModal"><span
+                                        class="badge badge-secondary"><img src="images/petition.png" class="img-fluid"
+                                            alt="icon">&nbsp;Petition</span></a>
+                                <a href="" data-toggle="modal" data-target="#pollModal"><span
+                                        class="badge badge-secondary"><img src="images/poll.png" class="img-fluid"
+                                            alt="icon">&nbsp;Poll</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postdiv" style="padding-bottom: 0;">
+                        <div id="postcontent-div">
+                            <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                            <div class="ml-10">
+                                <h5>Fresh and Clean with Four Brothers Plc.</h5>
+                                <p class="sponsored">Sponsored</p>
+                            </div>
+                        </div>
+                        <div class="friendspost">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <p>This ads was made possibly by <span class="bold">Four Brothers Plc.</span></p>
+                        </div>
+                        <div class="postpicture-div">
+                            <img src="images/post-picture.png" class="img-fluid" alt="Picture">
+                        </div>
+                        <div class="comments-div">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div>
+                                        <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <img src="images/like.png">&nbsp;10 Shares
+                                        </a>
+                                        <div class="dropdown-menu" style="transform: none!important;">
+                                            <a class="dropdown-item" href="#">Share on Facebook</a>
+                                            <a class="dropdown-item" href="#">Share on Twitter</a>
+                                            <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postdiv" style="padding-bottom: 0;">
+                        <div id="postcontent-div">
+                            <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                            <div class="ml-10">
+                                <h5>David Benjamin</h5>
+                                <p class="post-time">40min &emsp;(Lagos, Nigeria)</p>
+                            </div>
+                        </div>
+                        <div class="friendspost">
+                            <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of
+                                UX, PM and eng, and the reason why we emphasize this triad is because it is essentially
+                                what leads to the development of a product (done well when everyone works together).</p>
+                        </div>
+                        <div class="comments-div">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div>
+                                        <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <img src="images/like.png">&nbsp;10 Shares
+                                        </a>
+                                        <div class="dropdown-menu" style="transform: none!important;">
+                                            <a class="dropdown-item" href="#">Share on Facebook</a>
+                                            <a class="dropdown-item" href="#">Share on Twitter</a>
+                                            <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="makecomments-div">
+                            <img src="images/commenter.png" class="img-fluid" alt="Profile picture">
+                            <textarea class="form-control" placeholder="Write a comment here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="postdiv" style="padding-bottom: 0;">
+                        <div id="postcontent-div">
+                            <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                            <div class="ml-10">
+                                <h5>David Benjamin</h5>
+                                <p class="post-time">40min &emsp;(Lagos, Nigeria)</p>
+                            </div>
+                        </div>
+                        <div class="friendspost">
+                            <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of
+                                UX, PM and eng, and the reason why we emphasize this triad is because it is essentially
+                                what leads to the development of a product (done well when everyone works together).</p>
+                        </div>
+                        <div class="comments-div">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div>
+                                        <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <img src="images/like.png">&nbsp;10 Shares
+                                        </a>
+                                        <div class="dropdown-menu" style="transform: none!important;">
+                                            <a class="dropdown-item" href="#">Share on Facebook</a>
+                                            <a class="dropdown-item" href="#">Share on Twitter</a>
+                                            <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="makecomments-div">
+                            <img src="images/commenter.png" class="img-fluid" alt="Profile picture">
+                            <textarea class="form-control" placeholder="Write a comment here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="postdiv" style="padding-bottom: 0;">
+                        <div id="postcontent-div">
+                            <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                            <div class="ml-10">
+                                <h5>David Benjamin</h5>
+                                <p class="post-time">40min</p>
+                            </div>
+                        </div>
+                        <div class="friendspost">
+                            <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of
+                                UX, PM and eng, and the reason why we emphasize this triad is because it is essentially
+                                what leads to the development of a product (done well when everyone works together).</p>
+                        </div>
+                        <div class="comments-div">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div>
+                                        <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <img src="images/like.png">&nbsp;10 Shares
+                                        </a>
+                                        <div class="dropdown-menu" style="transform: none!important;">
+                                            <a class="dropdown-item" href="#">Share on Facebook</a>
+                                            <a class="dropdown-item" href="#">Share on Twitter</a>
+                                            <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentersdiv">
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="commenter-name">Maria Keshi</h5>
+                                </div>
+                            </div>
+                            <p>Great designers get involved in conversations, even forcing themselves, instead of just
+                                thinking about how they can do their work get involved in conversations, even forcing
+                                themselves, instead of just thinking about how they can do their work.</p>
+                            <div><span>3h</span>&emsp;<span>16 likes</span></div>
+                        </div>
+                    </div>
+                    <div class="postdiv" style="padding-bottom: 0;">
+                        <div id="postcontent-div">
+                            <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                            <div class="ml-10">
+                                <h5>David Benjamin</h5>
+                                <p class="post-time">40min</p>
+                            </div>
+                        </div>
+                        <div class="friendspost">
+                            <p>At Google, to encourage teamwork, we emphasize the product triad. This triad consists of
+                                UX, PM and eng, and the reason why we emphasize this triad is because it is essentially
+                                what leads to the development of a product (done well when everyone works together).</p>
+                        </div>
+                        <div class="comments-div">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div>
+                                        <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <img src="images/like.png">&nbsp;10 Shares
+                                        </a>
+                                        <div class="dropdown-menu" style="transform: none!important;">
+                                            <a class="dropdown-item" href="#">Share on Facebook</a>
+                                            <a class="dropdown-item" href="#">Share on Twitter</a>
+                                            <a class="dropdown-item" href="#">Share on Linkedin</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="peoplediv">
+                        <h6 class="bold">People you may know</h6>
+                        <div>
+                            <div class="flex-container">
+                                <div class="flex-item">
+                                    <div>
+                                        <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <h5>David Benjamin</h5>
+                                        <p>3 Mutual friends</p>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-add">Add</a>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-remove">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-container">
+                                <div class="flex-item">
+                                    <div>
+                                        <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <h5>David Benjamin</h5>
+                                        <p>3 Mutual friends</p>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-add">Add</a>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-remove">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-container">
+                                <div class="flex-item">
+                                    <div>
+                                        <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <h5>David Benjamin</h5>
+                                        <p>3 Mutual friends</p>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-add">Add</a>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-remove">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-container">
+                                <div class="flex-item">
+                                    <div>
+                                        <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <h5>David Benjamin</h5>
+                                        <p>3 Mutual friends</p>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-add">Add</a>
+                                    </div>
+                                </div>
+                                <div class="flex-item">
+                                    <div>
+                                        <a class="btn btn-info btn-remove">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="" class="more">More</a>
+                        </div>
+                    </div>
+                    <div class="trendingdiv">
+                        <h6 class="bold">Trending for you</h6>
+                        <div>
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="trending-name" class="mgt-5">Mark Anthony</h5>
+                                </div>
+                            </div>
+                            <p class="trending-topic">The general elections is in 49 days time</p>
+                            <div class="comments-div trending-like">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-10">
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="trending-name" class="mgt-5">Mark Anthony</h5>
+                                </div>
+                            </div>
+                            <p class="trending-topic">The general elections is in 49 days time</p>
+                            <div class="comments-div trending-like">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-10">
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="trending-name" class="mgt-5">Mark Anthony</h5>
+                                </div>
+                            </div>
+                            <p class="trending-topic">The general elections is in 49 days time</p>
+                            <div class="comments-div trending-like">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-10">
+                            <div id="postcontent-div">
+                                <img src="images/commenter-picture.png" class="img-fluid" alt="Profile picture">
+                                <div class="ml-10">
+                                    <h5 class="trending-name" class="mgt-5">Mark Anthony</h5>
+                                </div>
+                            </div>
+                            <p class="trending-topic">The general elections is in 49 days time</p>
+                            <div class="comments-div trending-like">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/like.png">&nbsp;10 Likes</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <a href=""><img src="images/comment.png">&nbsp;1 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="more" style="position: static;">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div>
+                        <p>© 2018 GClout | All copyrights rights reserved</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-right">
+                        <a href="">Help & FAQ</a>
+                        <a href="terms.html">Terms Of Use</a>
+                        <a href="privacy.html">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- create post modal -->
+    <div class="modal" id="postModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <p class="pull-left">Post</p>
+                    </div>
+                    <div>
+                        <p class="text-right"><img src="images/filter.png" class="img-fluid" alt="filter"> Filter</p>
+                    </div>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="postdiv" style="border: 0;">
+                        <div id="post-div">
+                            <div id="postcontent-div">
+                                <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                                <textarea class="form-control" placeholder="What’s on your mind"></textarea>
+                            </div>
+                            <div class="pt-20 pb-15 mb--15">
+                                <a href=""><span class="badge badge-secondary"><img src="images/article.png"
+                                            class="img-fluid" alt="icon">&nbsp;Article</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/camera.png"
+                                            class="img-fluid" alt="icon">&nbsp;Photo/video</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/location.png"
+                                            class="img-fluid" alt="icon">&nbsp;Location</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/petition.png"
+                                            class="img-fluid" alt="icon">&nbsp;Petition</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/poll.png"
+                                            class="img-fluid" alt="icon">&nbsp;Poll</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- create poll modal -->
+    <div class="modal" id="pollModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <p class="pull-left">Create poll</p>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option>Select a sector</option>
+                                <option>Economy</option>
+                                <option>Infrastructure</option>
+                                <option>Education</option>
+                                <option>Politics</option>
+                                <option>Security</option>
+                                <option>Agriculture</option>
+                                <option>Technology</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="postdiv" style="border: 0;">
+                        <div id="post-div">
+                            <div id="postcontent-div">
+                                <img src="images/p-picture.png" class="img-fluid" alt="Profile picture">
+                                <textarea class="form-control" placeholder="What’s on your mind"></textarea>
+                            </div>
+                            <div class="ml-60">
+                                <div class="pull-right">
+                                    <p class="text-right"><a href="" class="removepoll">Remove poll</a></p>
+                                </div>
+                                <form>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Yes/Agree/True
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input"
+                                                name="optradio">No/Disagree/False
+                                        </label>
+                                    </div>
+                                    <div class="form-check disabled">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">Undecided/No
+                                            idea
+                                        </label>
+                                    </div>
+                                    <p>
+                                        <a href="" class="removepoll addachoice"><i class="fa fa-plus"></i>&nbsp;Add a
+                                            choice</a>
+                                    </p>
+                                    <div class="pollselect-div">
+                                        <p>
+                                            <span>Poll length: </span>
+                                            <span>&nbsp;Days</span>
+                                            <select class="form-control" id="sel1">
+                                                <option>7</option>
+                                                <option>6</option>
+                                                <option>5</option>
+                                                <option>4</option>
+                                                <option>3</option>
+                                                <option>2</option>
+                                                <option>1</option>
+                                            </select>
+                                            <span>Hours</span>
+                                            <select class="form-control" id="sel1">
+                                                <option>7</option>
+                                                <option>6</option>
+                                                <option>5</option>
+                                                <option>4</option>
+                                                <option>3</option>
+                                                <option>2</option>
+                                                <option>1</option>
+                                            </select>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pb-15" style="margin-top: -25px;">
+                                <a href=""><span class="badge badge-secondary"><img src="images/article.png"
+                                            class="img-fluid" alt="icon">&nbsp;Article</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/camera.png"
+                                            class="img-fluid" alt="icon">&nbsp;Photo/video</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/location.png"
+                                            class="img-fluid" alt="icon">&nbsp;Location</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/petition.png"
+                                            class="img-fluid" alt="icon">&nbsp;Petition</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/poll.png"
+                                            class="img-fluid" alt="icon">&nbsp;Poll</span></a>
+                            </div>
+                            <div>
+                                <button class="btn btn-info btn-add btn-post">Post</button>
+                                <button class="btn btn-info btn-remove btn-post">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- create petition modal -->
+    <div class="modal" id="petitionModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <p class="pull-left">Create petition</p>
+                    </div>
+                    <div>
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option>Select a sector</option>
+                                <option>Economy</option>
+                                <option>Infrastructure</option>
+                                <option>Education</option>
+                                <option>Politics</option>
+                                <option>Security</option>
+                                <option>Agriculture</option>
+                                <option>Technology</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="postdiv" style="border: 0;">
+                        <div id="post-div">
+                            <div style="padding-top: 30px;">
+                                <form>
+                                    <div>
+                                        <div class="form-group">
+                                            <label for="petiton-title">Petition title</label>
+                                            <input type="text" class="form-control" id="petition-title"
+                                                placeholder="Petition title">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="petiton-body">Petition body</label>
+                                            <input type="text" class="form-control" id="petition-body"
+                                                placeholder="Type your petition here...">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="targeted-office">Targeted office</label>
+                                            <select class="form-control" id="targeted-office">
+                                                <option>President</option>
+                                                <option>Vice President</option>
+                                                <option>Secretary General</option>
+                                                <option>Education</option>
+                                                <option>Politics</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="pollselect-div">
+                                        <p>
+                                            <span>Petition length: </span>
+                                            <span>&nbsp;Days</span>
+                                            <select class="form-control" id="sel1">
+                                                <option>7</option>
+                                                <option>6</option>
+                                                <option>5</option>
+                                                <option>4</option>
+                                                <option>3</option>
+                                                <option>2</option>
+                                                <option>1</option>
+                                            </select>
+                                            <span>Hours</span>
+                                            <select class="form-control" id="sel1">
+                                                <option>7</option>
+                                                <option>6</option>
+                                                <option>5</option>
+                                                <option>4</option>
+                                                <option>3</option>
+                                                <option>2</option>
+                                                <option>1</option>
+                                            </select>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="pb-15" style="margin-top: -25px;">
+                                <a href=""><span class="badge badge-secondary"><img src="images/article.png"
+                                            class="img-fluid" alt="icon">&nbsp;Article</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/camera.png"
+                                            class="img-fluid" alt="icon">&nbsp;Photo/video</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/location.png"
+                                            class="img-fluid" alt="icon">&nbsp;Location</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/petition.png"
+                                            class="img-fluid" alt="icon">&nbsp;Petition</span></a>
+                                <a href=""><span class="badge badge-secondary"><img src="images/poll.png"
+                                            class="img-fluid" alt="icon">&nbsp;Poll</span></a>
+                            </div>
+                            <div>
+                                <button class="btn btn-info btn-add btn-post">Post</button>
+                                <button class="btn btn-info btn-remove btn-post">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

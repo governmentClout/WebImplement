@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+	.signup-box {
+    	width: 90%;
+	}
+	.signup-box .btn.btn-primary.btn-facebook,
+    .signup-box .btn.btn-primary.btn-twitter,
+    .signup-box .btn.btn-primary.btn-googleplus,
+    .signup-box .btn.btn-primary.btn-linkedin {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .signup-box .btn.btn-primary.btn-linkedin {
+    	margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .signup-box h3 {
+		display: none;
+	}
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+	.signup-box {
+	    width: 83%;
+	}
+}
